@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+    function preview_image(event) 
+        {
+            var reader= new FileReader() ;
+            reader.onload= function ()
+            {
+                var output= document.getElementById('output_image');
+                output.src= reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+        
+    </script>
+    <style>
+        #wr{
+            text-align: center;
+            margin: 0 auto;
+            padding: 0px;
+            width: 995px;
+        }
+        #output_image{
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li class="link"><a href="#Home">Home</a></li>
+
+        <li class="link"><a href="#mw">My Work</a></li>
+
+        <li class="link"><a href="#Tatoo_1">Tatoo Shape/ Structure</a></li>
+
+        <li class="link"><a href="#Tatoo_2">Tatoo Colour/ Color</a></li>
+
+        <li class="link"><a href="#Tatoo_3">Tatoo Preview & Edit</a></li>
+
+        <li class="link"><a href="#Tatoo_4_result">Tatoo Result</a></li>
+        
+        <li class="link"><a href="#Contact">Contact</a></li>
+
+    </ul>
+
+    <br><br><br><br><br><br>
+
+    <marquee class="marqueestyle">***Please "Comment" your experience, if you have any issue please give "Feedback" & if you have a doubt please ask in "Doubt".</marquee>
+<section id="Home">
+    <h1>Tatoo</h1>
+    <h5>Home</h5>
+        Hello! This is Tatoo app. You can make the tatoos that you dreamed of and you can also print the tatoos!!! Please "Comment" your experience, if you have any issue please give "Feedback" & if you have a doubt please ask in "Doubt". "Comment", "Feedback" & "Doubt" is in Contact you may click Contact on the top. Good luck experiencing the app.
+    <br><br><br>
+    <button class="new"  type="button" id="qy"><a href="#Tatoo_1">New TATOO</a></button>
+    </section>
+    
+    
+    
+    
+    
+    
+    <br><br><br><br>
+    <section id="mw">
+        <h1>My Work</h1>
+    <marquee class="marqueestyle">***In My Work you can perview your tatoos in a new tab & even print!</marquee>
+    </section>
+    
+    <br><br><br><br><br>
+    
+    
+    <section id="Tatoo_1">
+    <h1>Tatoo Shape/ Struture</h1>
+        <marquee class="marqueestye">You can choose the shape and structure of your tatoo in "Tatoo Shape/ Struture"</marquee>
+        <br><br>
+        <div id="wr">
+        <input type="file" accept="image/*" onchange="preview_image(event)">
+            <img id="output_image">
+        </div>
+    </section>
+    
+    
+    <br><br><br><br><br><br>
+    
+    
+    
+    <section id="Tatoo_2">
+    <h1>Tatoo Colour/ Color</h1>
+        <marquee class="marqueestyle">In Tatoo Colour/ Color You can choose the Colour/ color of your Tatoo</marquee>
+    </section>
+    
+    
+    <br><br><br><br>
+    
+    
+    <section id="Tatoo_3">
+    <h1>Tatoo Perview / Edit</h1>
+    <marquee class="marqueestyle">In Tatoo Perview / Edit You can Preview tatoo before save and Edit if you want any Changes and then you click save to confirm you edited and want to save.</marquee>
+    </section>
+    
+    
+  <br><br><br><br><br>  
+    
+    <section id="Tatoo_4_result">
+    <h1>Tatoo result</h1>
+        <marquee class="marqueestyle">In Tatoo result you can View your Tatoo that you Made!!!!!!!!!!!!!!!!!</marquee>
+    </section>
+    
+    <br><br><br><br>
+    
+    
+    <section id="Contact">
+    <h1>Contact</h1>
+        <marquee class="marqueestyle">Please "Comment" your experience, if you have any issue please give "Feedback" & if you have a doubt please ask in "Doubt". "Comment", "Feedback" & "Doubt" is here in Contact.
+</marquee>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.menu {
+    position: absolute;
+    cursor: pointer;
+    display: flow-root;
+    font-family: fantasy;
+    text-align: justify-all;
+    font-size: 23px;
+}
+
+.link {
+    text-decoration: none;
+    display: inline;
+    margin: 20px;
+
+}
+
+.link:hover {
+    color: cornflowerblue;
+}
+
+body {
+    text-align: center;
+    font-family: fantasy;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 60px;
+}
